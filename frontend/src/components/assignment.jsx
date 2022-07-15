@@ -26,11 +26,33 @@ export const Assignments = () => {
         placeholder="name of the Admin"
         name="name"
         onChange={handleData}
+        style={{ width: "50%", height: "50px", borderRadius: "10px" }}
       />
 
-      <input placeholder="topic" name="topic" onChange={handleData} />
-      <input placeholder="video" name="video" onChange={handleData} />
-      <button onClick={addData}>Add assignment</button>
+      <input
+        placeholder="topic"
+        name="topic"
+        onChange={handleData}
+        style={{ width: "50%", height: "50px", borderRadius: "10px" }}
+      />
+      <input
+        placeholder="video"
+        name="video"
+        onChange={handleData}
+        style={{ width: "50%", height: "50px", borderRadius: "10px" }}
+      />
+      <br />
+      <button
+        onClick={addData}
+        style={{
+          width: "20%",
+          height: "30px",
+          borderRadius: "10px",
+          marginTop: "10px",
+        }}
+      >
+        Add assignment
+      </button>
     </>
   );
 };

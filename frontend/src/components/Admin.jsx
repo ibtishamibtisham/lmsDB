@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { logout } from "../firebase";
 import { Lectures } from "./lectures";
 
 export const Admin = () => {
+  const navigate = useNavigate();
   const handleLogout = async () => {
     try {
       await logout();
       alert("Logged out");
+      navigate("/login");
     } catch (error) {
       console.log(error);
     }
@@ -26,7 +28,7 @@ export const Admin = () => {
           <Link to="/createassignments">create Assignments</Link>
         </button>
       </div>
-      <Lectures />
+      <h1>WElcome to admin Dashboard</h1>
     </>
   );
 };

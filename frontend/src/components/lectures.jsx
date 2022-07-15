@@ -26,9 +26,27 @@ export const Lectures = () => {
         placeholder="name of the Admin"
         name="name"
         onChange={handleData}
+        style={{ width: "50%", height: "50px", borderRadius: "10px" }}
       />
-      <input placeholder="subject" name="subject" onChange={handleData} />
-      <button onClick={addData}>Add</button>
+      <br />
+      <input
+        placeholder="subject"
+        name="subject"
+        onChange={handleData}
+        style={{ width: "50%", height: "50px", borderRadius: "10px" }}
+      />
+      <br />
+      <button
+        onClick={addData}
+        style={{
+          width: "30%",
+          height: "50px",
+          borderRadius: "10px",
+          marginTop: "10px",
+        }}
+      >
+        Add
+      </button>
     </>
   );
 };
